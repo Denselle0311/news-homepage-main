@@ -1,0 +1,149 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  * {
+    margin: 0;
+  }
+
+  @font-face {
+    font-family: Inter-regular;
+    src: url(../assets/fonts/Inter-VariableFont_slnt\,wght.ttf), format('truetype');
+
+  }
+  
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    margin: 0 auto;
+    font-family: Inter-regular;
+    padding: 16px;
+    background-color: hsl(36, 100%, 99%);
+  }
+  
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+    height: 100%;
+  }
+
+  ul,li {
+    padding: 0;
+    margin: 0;
+  }
+  
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  p{
+    font-weight: 400;
+    font-size: 15px;
+    margin: 0;
+    color: hsl(236, 13%, 42%);
+  }
+  h1 {
+    font-size: 40px;
+    line-height: 1;
+    font-weight: 800;
+    margin: 0;
+  }
+  h2,h3 {
+    font-weight: 700;
+  }
+
+  .logo {
+    width: 46px;
+    height: 28px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+    margin-bottom: 32px;
+  }
+  .flex {
+    display: flex;
+  }
+
+  .grid-container {
+    display: grid;
+    gap: 55px;
+  }
+
+  main {
+    display: grid;
+    row-gap: 25px;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+  }
+
+  button {
+    height: 48px;
+    width: 183px;
+    border: 0;
+    background-color: hsl(5, 85%, 63%);
+    color: black;
+    letter-spacing: 3.5px;
+    line-height: 1.5;
+    font-weight: 800;
+  }
+
+  aside {
+    display: flex;
+    flex-direction: column;
+    background-color:hsl(240, 100%, 5%);
+    padding: 16px 16px 0 16px;
+  }
+  aside div {
+    display: flex;
+    flex-direction: column;
+    justify-content:  center;
+    gap: 5px;
+    height: 145px;
+  }
+  .border {
+    border-top: 1px solid hsla(233, 8%, 79%, 0.5);
+  }
+  aside h2 {
+    color: hsl(35, 77%, 62%);
+    font-size: 30px;
+    margin-bottom: -20px;
+  }
+  aside h3 {
+    color: white;
+  }
+  aside p {
+    color: hsl(233, 8%, 79%);
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .card {
+    display: flex;
+    gap: 25px;
+  }
+  .card div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .card img {
+    width: 100px;
+    height: 130px;
+  }
+  .card h2 {
+    font-size: 30px;
+    color: hsl(5, 85%, 63%);
+    line-height: 1;
+  }
