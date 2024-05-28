@@ -115,11 +115,13 @@
   .grid-container {
     display: grid;
     gap: 55px;
+    justify-content: center;
   }
 
   main {
     display: grid;
     row-gap: 25px;
+    align-items: center;
   }
 
   .text {
@@ -191,4 +193,40 @@
     font-size: 30px;
     color: hsl(5, 85%, 63%);
     line-height: 1;
+  }
+
+  @media screen and (min-width: 600px) {
+    body {
+      padding: 0 8% 89px;
+    }
+  }
+
+  @media screen and (min-width: 810px) {
+    .flex {
+      display: flex;
+      list-style: none;
+      align-items: center;
+      gap: 25px;
+    }
+    .flex img {
+      display: none;
+    }
+    .menuBtn {
+      display: none;
+    }
+    .grid-container {
+      grid-template-areas: 
+      "a a a b b"
+      "a a a b b"
+      "c c c c c" 
+    }
+    main {
+      grid-area: a;
+    }
+    aside {
+      grid-area: b;
+    }
+    article {
+      grid-area: c;
+    }
   }
